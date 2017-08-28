@@ -9,7 +9,7 @@ To provide date filtering functionality, a number of endpoints now support the *
 - [**GET /Items**](../Endpoints/GET_Items.md)
 - [**GET /Items/{LocID}**](../Endpoints/GET_Items_ByLocation.md)
 
-**NOTE:** We strongly recommend you use ISO 8601 format in the **StartDate** and **EndDate** parameters. Other formats may produce unexpected results.
+**NOTE:** We strongly recommend you use the ISO 8601 date format in the **StartDate** and **EndDate** parameters. Other formats may produce unexpected results.
 ## Paging Parameters for Item, Customer, and Inventory Endpoints
 To accomodate large data sets, a number of endpoints now support the new **Page** and **Rows** parameters. These parameters allow you to specify the number of rows to retrieve per page and the specific page number to retrieve for the following endpoints:
 - [**GET /Customers**](../Endpoints/GET_Customers.md)
