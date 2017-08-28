@@ -22,7 +22,7 @@ To accomodate large data sets, a number of endpoints now support the new **Page*
 This version of the NCR Counterpoint API includes a new [**GET /Inventory/Locations**](../blob/master/Endpoints/GET_InventoryLocations.md) endpoint that allows you to retrieve detailed information from the IM_LOC table for all stocking locations for your company.
 ## Bug Fixes
 In addition, version 2.0 addresses a number of issues reported from the field in the initial 1.0 release, including...
-### Issue number?
+### Issue number (CP-2320)
 Blah...
-### Issue number?
+### Issue number (
 Blah...
