@@ -1,4 +1,4 @@
-# NCR Counterpoint API 2.0 Release Notes
+# NCR Counterpoint API v2.0 Release Notes
 Version 2.0 of the NCR Counterpoint API includes the following new features and improvements:
 ## Start/End Date Filters for Item, Customer, and Inventory Endpoints
 To provide date filtering functionality, a number of endpoints now support the **StartDate** and **EndDate** parameters. These parameters allow you to specify a date range that filters the modified date (**RS_UTC_DT**) field for calls to the following endpoints:
