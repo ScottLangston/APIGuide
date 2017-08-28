@@ -21,7 +21,7 @@ To accomodate large data sets, a number of endpoints now support the new **Page*
 ## New Endpoint: GET /Inventory/Locations
 This version of the NCR Counterpoint API includes a new [**GET /Inventory/Locations**](../blob/master/Endpoints/GET_InventoryLocations.md) endpoint, which allows you to retrieve information from the IM_LOC table for all stocking locations.
 ## Issues Resolved
-This version addresses a number of issues that were reported in the initial v1.0 release of the NCR Counterpoint API, including:
+Version 2.0 addresses a number of issues that were reported in the initial v1.0 release of the NCR Counterpoint API, including:
 ### Issue #7: /Items Endpoint - Error 500
 Previously, calls to the **/Items** endpoint in databases with a large number (10,000+) of item records returned an error, due to the size of the dataset and the number of child records that needed to be retreived.
 In this version, the underlying queries for the following endpoints have been updated to be able to retrieve large datasets without returning an error: 
