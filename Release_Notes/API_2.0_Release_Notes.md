@@ -24,7 +24,7 @@ To accomodate large data sets, a number of endpoints now support the new **Page*
 - [**GET /Items/{LocID}**](../Endpoints/GET_Items_ByLocation.md)
 ## New Endpoint: GET /Inventory/Locations
 This version of the NCR Counterpoint API includes a new [**GET /Inventory/Locations**](../Endpoints/GET_InventoryLocations.md) endpoint, which allows you to retrieve information from the IM_LOC table for all stocking locations.
-## Issues Resolved
+## Resolved Issues
 Version 2.0 addresses a number of issues that were reported in the initial v1.0 release of the NCR Counterpoint API, including:
 ### GET /Items Endpoint - Error 500 ([Issue #7](https://github.com/NCRCounterpointAPI/APIGuide/issues/7 ))
 Previously, calls to the **/Items** endpoint in databases with a large number (10,000+) of item records returned an error, due to the size of the dataset and the number of child records that needed to be retreived.
@@ -51,7 +51,9 @@ In this version, each new role is saved automatically when you click the **Add N
 Previously, when you used the **Edit Company** function of the API Admin Console, even if no changes were made, the **Add Company Admins** dialog that appears when you click **Edit Admins** did not list any administrator users.
 
 In this version, clicking **Edit Admins** always displays a list of administrator users in the **Add Company Admins** dialog, regardless of whether you have recently edited your company.
-### Edit Company in Admin Console Not Working
-Internal only???
+### Edit Company Function in Admin Console Not Working
+In previous builds of the NCR Counterpoint API, the **Edit Company** function in the API Admin Console could sometimes fail, preventing changes to a company once it was added.
+
+In this version, administrator users can reliably use the **Edit Company** function to edit existing companies and save their changes correctly.
 ### Customer Card Information not Returned by GET \Customers\EC Calls
 Internal only???
