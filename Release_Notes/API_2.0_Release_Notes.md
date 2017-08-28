@@ -27,7 +27,7 @@ Previously, calls to the **/Items** endpoint in databases with a large number (1
 In this version, the underlying queries for the following endpoints have been updated to be able to retrieve large datasets without returning an error: 
 - **GET /Customers/EC**
 - **GET /Inventory/{LocID}**
-- **Get /Inventory/EC**
+- **GET /Inventory/EC**
 - **GET /Item**
 - **GET /Items/{LocID}**
 ### Issue number
