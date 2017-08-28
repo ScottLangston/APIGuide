@@ -28,6 +28,7 @@ This version of the NCR Counterpoint API includes a new [**GET /Inventory/Locati
 Version 2.0 addresses a number of issues that were reported in the initial v1.0 release of the NCR Counterpoint API, including:
 ### GET /Items Endpoint - Error 500 ([Issue #7](https://github.com/NCRCounterpointAPI/APIGuide/issues/7 ))
 Previously, calls to the **/Items** endpoint in databases with a large number (10,000+) of item records returned an error, due to the size of the dataset and the number of child records that needed to be retreived.
+
 In this version, the underlying queries for the following endpoints have been updated to be able to retrieve large datasets without returning an error: 
 - **GET /Customers/EC**
 - **GET /Inventory/{LocID}**
@@ -36,15 +37,19 @@ In this version, the underlying queries for the following endpoints have been up
 - **GET /Items/{LocID}**
 ### GET /Item/Images/{filename} - Case-sensitive File Names ([Issue #29](https://github.com/NCRCounterpointAPI/APIGuide/issues/29))
 Previously, **GET /Item/Images/{filename}** calls would only successfully return results when the item image file names on the corresponding NCR Counterpoint server were all uppercase with lowercase file extensions (e.g., ITEM_IMAGE.jpg).
+
 In this version, **GET /Item/Images/{filename}** calls are no longer case-sensitive and always return the specified image(s), regardless of the image file names.
 ### Installing API on a System without Counterpoint ([Issue #2](https://github.com/NCRCounterpointAPI/APIGuide/issues/2))
 Previously, the NCR Counterpoint API would not start properly when it was installed on a system that did not already have NCR Counterpoint installed.
+
 In this version, the API starts without error on a system that does not have NCR Counterpoint installed.
 ### Saving a New Role
 Previously, when you added a new role in the API Admin Console, the new role was not saved unless endpoints were defined for the role, which could result in roles "disappearing" from the **Edit Roles** list.
+
 In this version, each new role is saved automatically when you click the **Add New Role** button.
 ### Edit Admin Form Returns No Results when Company is Edited
 Previously, when you used the **Edit Company** function of the API Admin Console, even if no changes were made, the **Add Company Admins** dialog that appears when you click **Edit Admins** did not list any administrator users.
+
 In this version, clicking **Edit Admins** always displays a list of administrator users in the **Add Company Admins** dialog, regardless of whether you have recently edited your company.
 ### Edit Company in Admin Console Not Working
 Internal only???
