@@ -1,5 +1,11 @@
 # NCR Counterpoint API v2.0 Release Notes
 Version 2.0 of the NCR Counterpoint API includes the following new features and improvements:
+## Version Number and PA-DSS Validation
+Due to changes that require PA-DSS validation, the version number for the NCR Counterpoint API has been incremented to 2.0. 
+
+The PA-DSS assessment for v2.0 of the API has not been completed as of this release, which means that this version is not currently PA-DSS validated. However, payment-related changes in the release are minimal and we do not expect them to invalidate the PA-DSS compliance status of the API. 
+
+When the PA-DSS assessment of the API is complete, we will publish a new Attestation of Validation (AOV) and announce the API's PA-DSS compliance status.
 ## NCR Counterpoint V8.5.3 Support
 Version 2.0 of the NCR Counterpoint API has been tested with and is fully supported by NCR Counterpoint V8.5.3.
 ## SHA-256 Certificate with TLS 1.2 Compatibility
@@ -55,5 +61,3 @@ In this version, clicking **Edit Admins** always displays a list of administrato
 In previous builds of the NCR Counterpoint API, the **Edit Company** function in the API Admin Console could sometimes fail, preventing changes to a company once it was added.
 
 In this version, administrator users can reliably use the **Edit Company** function to edit existing companies and save their changes correctly.
-### Customer Card Information not Returned by GET \Customers\EC Calls
-Internal only???
