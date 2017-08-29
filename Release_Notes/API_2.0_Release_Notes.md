@@ -1,11 +1,11 @@
 # NCR Counterpoint API v2.0 Release Notes
 Version 2.0 of the NCR Counterpoint API includes the following new features and improvements:
 ## Version Number and PA-DSS Validation
-Due to changes that require PA-DSS validation, the version number for the NCR Counterpoint API has been incremented to 2.0. 
+While we originally intended this release to be version 1.1, due to the nature of changes included in thisrelease, along with our PCI-DSS versioning guidance, we were compelled to label this release version 2.0.
 
-The PA-DSS assessment for v2.0 of the API has not been completed as of this release, which means that this version is not currently PA-DSS validated. However, payment-related changes in the release are minimal and we do not expect them to invalidate the PA-DSS compliance status of the API. 
+This version change means that the current PA-DSS validation for the 1.x release of the API is not applicable for this release. We will be pursuing a 2.x PA validation to cover the v2.0 release line.
 
-When the PA-DSS assessment of the API is complete, we will publish a new Attestation of Validation (AOV) and announce the API's PA-DSS compliance status.
+When the PA-DSS assessment of the v2.0 API is complete, we will publish a new Attestation of Validation (AOV) and announce the API's PA-DSS compliance status.
 ## NCR Counterpoint V8.5.3 Support
 Version 2.0 of the NCR Counterpoint API has been tested with and is fully supported by NCR Counterpoint V8.5.3.
 ## SHA-256 Certificate with TLS 1.2 Compatibility
